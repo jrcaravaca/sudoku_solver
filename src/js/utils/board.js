@@ -6,7 +6,7 @@ export function board(container) {
             cell.type = "text"
             cell.classList.add("aspect-square","border", "w-12", "text-center")
             cell.addEventListener('keypress',(e) => {
-                console.log(e)
+        
                 if (!(parseInt(e.key) <= 9 && parseInt(e.key) > 0)) {
                     e.preventDefault()
                 }
